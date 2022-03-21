@@ -16,7 +16,7 @@ author: Tyler Brassel
 navbar-links:
   About Me: "aboutme"
   Shiny Apps:
-    - RShinyStockDemonstration: "https://tbrassel.shinyapps.io/RShinyStockDemonstration/"
+    - RShinyStockDemo: "https://tbrassel.shinyapps.io/RShinyStockDemonstration/"
   GitHub: "https://github.com/tbrassel"
 
 # --- Logo --- #
