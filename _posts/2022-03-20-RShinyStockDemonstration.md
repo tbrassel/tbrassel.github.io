@@ -10,4 +10,5 @@ I made this Shiny application as an exercise on working with the package [tidyqu
 
 Visit the application deployed with [RSConnect](https://www.rdocumentation.org/packages/rsconnect/versions/0.8.25) here:
 
-> https://tbrassel.shinyapps.io/RShinyStockDemonstration/
+{: .box-note}
+https://tbrassel.shinyapps.io/RShinyStockDemonstration/
