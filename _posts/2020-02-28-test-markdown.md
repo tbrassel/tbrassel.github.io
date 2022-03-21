@@ -2,10 +2,8 @@
 layout: post
 title: RShinyStockDemonstration
 subtitle: A Shiny App Stock Market analysis tool 
-gh-repo: daattali/beautiful-jekyll
+gh-repo: daattali/RShinyStockDemonstration
 gh-badge: [star, fork, follow]
-tags: [test]
-comments: true
 ---
 
 I made this Shiny application as an exercise on working with the package [tidyquant](https://business-science.github.io/tidyquant/) in order to gain more experience building and deploying applications that scrape real-world web data in an unfamiliar format.
