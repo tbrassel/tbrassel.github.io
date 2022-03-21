@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sample blog post
-subtitle: Each post also has a subtitle
+title: RShinyStockDemonstration
+subtitle: A Shiny App Stock Market analysis tool 
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
 
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+I made this Shiny application as an exercise on working with the package [tidyquant](https://business-science.github.io/tidyquant/) in order to gain more experience building and deploying applications that scrape real-world web data in an unfamiliar format.
 
 **Here is some bold text**
 
@@ -52,11 +52,12 @@ foo(3)
 
 And here is the same code yet again but with line numbers:
 
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
+{% highlight R linenos %}
+# Download the most recent list of NASDAQ traded stocks
+url = "ftp.nasdaqtrader.com/SymbolDirectory/nasdaqtraded.txt"
+tmp <- tempfile()
+curl_download(url=url, tmp)
+tbl <- read.table(tmp, stringsAsFactors = FALSE, header = TRUE, fill = TRUE, sep = "|", quote = "")
 {% endhighlight %}
 
 ## Boxes
