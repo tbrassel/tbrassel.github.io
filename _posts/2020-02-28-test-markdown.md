@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RShinyStockDemonstration
+title: RShinyStockDemo
 subtitle: A Shiny App Stock Market analysis tool 
 gh-repo: daattali/RShinyStockDemonstration
 gh-badge: [star, fork, follow]
