@@ -4,7 +4,7 @@ title: Tyler Brassel
 subtitle: Biological Data Analyst
 ---
 ### Education
-#####**University of California Davis**
+##### **University of California Davis**
 - B.S. Biotechnology, Bioinformatics Emphasis 
 
 
