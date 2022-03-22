@@ -1,3 +1,9 @@
+---
+layout: post
+title: Comparing Two Bioinformatics Databases
+subtitle: What is the genetic origin of large therapeutic dosage range of the anticoagulant drug Warfarin?
+---
+
 ## **VKORC1 Overview**
 ***
 ![[The Warfarin Pathway](https://s3.pgkb.org/pathway/PA145011114.png?versionId=WPnE8UK.Ot6e_jjG2Uq2vvHnlTAiQxNX)][logo0]
