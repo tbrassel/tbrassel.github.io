@@ -3,8 +3,8 @@ layout: post
 title: What can the gene network interactions of VKORC1 tell me about Warfarin metabolism?
 subtitle:  VKORC1 Gene Ontology Enrichment Network Analysis with Cytoscape, an open source software platform for visualizing complex networks and integrating these with any type of attribute data.
 --- 
-
-{: .box-note} Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. 
+## Cytoscape Citation
+- Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. 
 Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research 2003 Nov; 13(11):2498-504 
 
 ## What is [Cytoscape](https://cytoscape.org/)?
@@ -49,12 +49,12 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 ## **Gene Ontology Enrichment Network**
 
-![VKORC1 GO Network](https://github.com/tbrassel/tbrassel.github.io/blob/master/assets/img/VKORC1_GO.png)
+![VKORC1 GO Network](https://github.com/tbrassel/tbrassel.github.io/blob/master/assets/img/VKORC1_GO.png?raw=rue)
 
 
 ## **Gene Ontology Enrichment Table**
 
-![VKORC1 GO Table (directly from the STRING website)](https://github.com/tbrassel/tbrassel.github.io/blob/master/assets/img/GO_table.png)
+![VKORC1 GO Table (directly from the STRING website)](https://github.com/tbrassel/tbrassel.github.io/blob/master/assets/img/GO_table.png?raw=true)
 
 
 ### **Discussion**
