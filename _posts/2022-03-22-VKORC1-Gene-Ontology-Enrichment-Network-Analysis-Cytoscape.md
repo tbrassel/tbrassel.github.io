@@ -7,7 +7,7 @@ subtitle:  VKORC1 Gene Ontology Enrichment Network Analysis with Cytoscape, an o
 {: .box-note} Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. 
 Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research 2003 Nov; 13(11):2498-504 
 
-## What is [Cytoscape](https://cytoscape.org/)?:
+## What is [Cytoscape](https://cytoscape.org/)?
 **Cytoscape supports many use cases in molecular and systems biology, genomics, and proteomics:**
 - Load molecular and genetic interaction data sets in many standards formats
 - Project and integrate global datasets and functional annotations
