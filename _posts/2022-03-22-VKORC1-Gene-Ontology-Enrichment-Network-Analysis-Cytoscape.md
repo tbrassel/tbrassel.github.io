@@ -40,7 +40,7 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 ## **Gene Network: VKORC1**
 
-![VKORC1 Interaction Network](https://github.com/tbrassel/tbrassel.github.io/blob/master/assets/img/VKORC1_String.png)
+![VKORC1 Interaction Network](https://github.com/tbrassel/tbrassel.github.io/blob/master/assets/img/VKORC1_String.png?raw=true)
 
 
 ### **Discussion**
@@ -54,7 +54,7 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 ## **Gene Ontology Enrichment Table**
 
-![VKORC1 GO Table (directly from the STRING website)](https://github.com/tbrassel/tbrassel.github.io/master/assets/img/GO_table.png)
+![VKORC1 GO Table (directly from the STRING website)](https://github.com/tbrassel/tbrassel.github.io/blob/master/assets/img/GO_table.png)
 
 
 ### **Discussion**
