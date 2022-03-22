@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Tyler Brassel
-subtitle: Data Analyst
+subtitle: Bioinformatics Data Analyst
+description: testing 123
 ---
 ##### **University of California Davis**
 - B.S. Biotechnology, Bioinformatics Emphasis 
