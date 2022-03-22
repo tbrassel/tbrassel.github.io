@@ -5,7 +5,7 @@ subtitle:  VKORC1 Gene Ontology Enrichment Network Analysis with Cytoscape, an o
 --- 
 
 - Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. 
-Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research 2003 Nov; 13(11):2498-504 
+*Cytoscape: a software environment for integrated models of biomolecular interaction networks.* Genome Research 2003 Nov; 13(11):2498-504 
 
 # What is [Cytoscape](https://cytoscape.org/)?
 
