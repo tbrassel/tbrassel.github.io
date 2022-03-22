@@ -7,7 +7,7 @@ subtitle:  VKORC1 Gene Ontology Enrichment Network Analysis with Cytoscape, an o
 - Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. 
 Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research 2003 Nov; 13(11):2498-504 
 
-## What is [Cytoscape](https://cytoscape.org/)?
+# What is [Cytoscape](https://cytoscape.org/)?
 
 ![Visual Mapping for Microarray Data](https://cytoscape.org/images/screenshots/visualMapping1.png)
 
@@ -18,6 +18,8 @@ Cytoscape: a software environment for integrated models of biomolecular interact
 - Perform advanced analysis and modeling using Cytoscape Apps
 - Visualize and analyze human-curated pathway datasets such as WikiPathways, Reactome, and KEGG.
 
+***
+
 ![Twitter Social Network Visualization](https://cytoscape.org/images/screenshots/twitterVisualization1.png)
 
 **Cytoscape is used by social scientists to:**
@@ -26,6 +28,8 @@ Cytoscape: a software environment for integrated models of biomolecular interact
 - Gather social interactions from the web by variety of web service APIs with scripting languages and save it in standard data file formats. Cytoscape supports most of the standard file formats .
 - Calculate network statistics using Apps
 - Use with other tools, such as R with sna/ igraph package or NetworkX, for more advanced analysis
+
+# VKORC1 Analysis
 
 ## Load Libraries
 ```R
