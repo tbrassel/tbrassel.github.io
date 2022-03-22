@@ -1,10 +1,31 @@
 ---
 layout: post
-title: VKORC1 Gene Ontology Enrichment Network Analysis with Cytoscape, an open source software platform for visualizing complex networks and integrating these with any type of attribute data.
-subtitle: What can the gene network interactions of VKORC1 tell me about Warfarin metabolism?
+title: What can the gene network interactions of VKORC1 tell me about Warfarin metabolism?
+subtitle:  VKORC1 Gene Ontology Enrichment Network Analysis with Cytoscape, an open source software platform for visualizing complex networks and integrating these with any type of attribute data.
 --- 
 
-https://cytoscape.org/)
+https://cytoscape.org/
+
+{: .box-note} Shannon P, Markiel A, Ozier O, Baliga NS, Wang JT, Ramage D, Amin N, Schwikowski B, Ideker T. 
+Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Research 2003 Nov; 13(11):2498-504 
+
+## What is [Cytoscape](https://cytoscape.org/)?:
+**Cytoscape supports many use cases in molecular and systems biology, genomics, and proteomics:**
+- Load molecular and genetic interaction data sets in many standards formats
+- Project and integrate global datasets and functional annotations
+- Establish powerful visual mappings across these data
+- Perform advanced analysis and modeling using Cytoscape Apps
+- Visualize and analyze human-curated pathway datasets such as WikiPathways, Reactome, and KEGG.
+
+**Cytoscape is used by social scientists to:**
+- Visualize and analyze large social networks of interpersonal relationships
+- Assemble social networks from tables and forms
+- Gather social interactions from the web by variety of web service APIs with scripting languages and save it in standard data file formats. Cytoscape supports most of the standard file formats .
+- Calculate network statistics using Apps
+- Use with other tools, such as R with sna/ igraph package or NetworkX, for more advanced analysis
+
+## Overview
+
 
 ## Load Libraries
 ```R
@@ -29,7 +50,7 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 ### **Discussion**
 
-- *VKORC1* encodes the vitamin K epoxide reductase enzyme, which is responsible for converting vitamin K epoxide to vitamin K as part of the clot signalling pathway in humans. Polymorphisms in *VKORC1* are shown too be significant contributors to Warfarin dose variance, a common anticoagulant prescribed for a variety of conditions. As one can see from the Gene Network, the neighboring gene *CYP2D6* (Cytochrome P450 2D6), which is responsible for the metabolism of many drugs and environmental chemicals according to STRING, interacts significantly with *VKORC1*. The other genes are associated with the vitamin K metabolism pathway. I mainly gather from this network the significance of looking at more than one gene than *VKORC1* when using genetic assays to predict dosage of Warfarin. It is clear to me now in a way that it was not during Project 1 that a complicated enzymatic ballet drives the metabolism of Warfarin.
+- *VKORC1* encodes the vitamin K epoxide reductase enzyme, which is responsible for converting vitamin K epoxide to vitamin K as part of the clot signalling pathway in humans. Polymorphisms in *VKORC1* are shown too be significant contributors to Warfarin dose variance, a common anticoagulant prescribed for a variety of conditions. As one can see from the Gene Network, the neighboring gene *CYP2D6* (Cytochrome P450 2D6), which is responsible for the metabolism of many drugs and environmental chemicals according to STRING, interacts significantly with *VKORC1*. The other genes are associated with the vitamin K metabolism pathway. I mainly gather from this network the significance of looking at more than one gene than *VKORC1* when using genetic assays to predict dosage of Warfarin. A complicated enzymatic ballet drives the metabolism of Warfarin.
 
 ## **Gene Ontology Enrichment Network**
 
