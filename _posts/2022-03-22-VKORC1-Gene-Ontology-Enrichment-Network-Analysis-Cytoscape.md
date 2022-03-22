@@ -31,7 +31,7 @@ Cytoscape: a software environment for integrated models of biomolecular interact
 
 ***
 
-[Analyze Network with Network Analyzer](https://cytoscape.org/images/screenshots/networkAnalyzer1.png)
+![Analyze Network with Network Analyzer](https://cytoscape.org/images/screenshots/networkAnalyzer1.png)
 
 **Cytoscape is domain-independent and therefore is a powerful tool for complex network analysis in general.**
 - Calculate statistics for networks by Apps such as NetworkAnalyzer or CentiScaPe
