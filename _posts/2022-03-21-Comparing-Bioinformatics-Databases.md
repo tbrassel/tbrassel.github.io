@@ -75,14 +75,14 @@ between genetic variations and how the human responds to medications. PharmGKB i
 
 ***
 
-[^1]: What is Atrial Fibrillation (AFib or AF)? (n.d.). Retrieved October 15, 2019, from www.heart.org website: https://www.heart.org/en/health-topics/atrial-fibrillation/what-is-atrial-fibrillation-afib-or-af
+[^1]: What is Atrial Fibrillation (AFib or AF)? (n.d.). Retrieved October 15, 2019, from www.heart.org website: [https://www.heart.org/en/health-topics/atrial-fibrillation/what-is-atrial-fibrillation-afib-or-af](https://www.heart.org/en/health-topics/atrial-fibrillation/what-is-atrial-fibrillation-afib-or-af)
 
-[^2]: VKORC1 gene homepage—Global Variome shared LOVD. (n.d.). Retrieved September 28, 2019, from https://databases.lovd.nl/shared/genes/VKORC1
+[^2]: VKORC1 gene homepage—Global Variome shared LOVD. (n.d.). Retrieved September 28, 2019, from [https://databases.lovd.nl/shared/genes/VKORC1](https://databases.lovd.nl/shared/genes/VKORC1)
 
-[^3]: Owen, R. P., Gong, L., Sagreiya, H., Klein, T. E., & Altman, R. B. (2010). VKORC1 Pharmacogenomics Summary. Pharmacogenetics and Genomics, 20(10), 642–644. https://doi.org/10.1097/FPC.0b013e32833433b6
+[^3]: Owen, R. P., Gong, L., Sagreiya, H., Klein, T. E., & Altman, R. B. (2010). VKORC1 Pharmacogenomics Summary. Pharmacogenetics and Genomics, 20(10), 642–644. [https://doi.org/10.1097/FPC.0b013e32833433b6](https://doi.org/10.1097/FPC.0b013e32833433b6)
 
-[^4]: Fokkema, I. F. A. C., Taschner, P. E. M., Schaafsma, G. C. P., Celli, J., Laros, J. F. J., & Dunnen, J. T. den. (2011). LOVD v.2.0: The next generation in gene variant databases. Human Mutation, 32(5), 557–563. https://doi.org/10.1002/humu.21438
+[^4]: Fokkema, I. F. A. C., Taschner, P. E. M., Schaafsma, G. C. P., Celli, J., Laros, J. F. J., & Dunnen, J. T. den. (2011). LOVD v.2.0: The next generation in gene variant databases. Human Mutation, 32(5), 557–563. [https://doi.org/10.1002/humu.21438](https://doi.org/10.1002/humu.21438)
 
 [^5]: M. Whirl-Carrillo, E.M. McDonagh, J. M. Hebert, L. Gong, K. Sangkuhl, C.F. Thorn, R.B. Altman and T.E. Klein. "Pharmacogenomics Knowledge for Personalized Medicine" Clinical Pharmacology & Therapeutics (2012) 92(4): 414-417.
 
-[^6]: VKORC1—Overview. (n.d.). Retrieved October 15, 2019, from PharmGKB website: https://www.pharmgkb.org/gene/PA133787052/overview
+[^6]: VKORC1—Overview. (n.d.). Retrieved October 15, 2019, from PharmGKB website: [https://www.pharmgkb.org/gene/PA133787052/overview](https://www.pharmgkb.org/gene/PA133787052/overview)
