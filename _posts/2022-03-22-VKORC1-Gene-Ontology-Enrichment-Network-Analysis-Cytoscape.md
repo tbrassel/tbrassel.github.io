@@ -5,20 +5,20 @@ subtitle: What can the gene network interactions of VKORC1 tell me about Warfari
 ---
 
 ## Load Libraries
-{% highlight R linenos %}
+```R
 library(dplyr) 
 library(tidyr) 
 library(readr)
-{% endhighlight %}
+```
 
 
 ## **Preliminary data analysis**
 ##### The two tables share the *Gene* column in common.
 ***
-{% highlight R linenos %}
+```R
 galExpData <- read_csv(file='galExpData.csv')
 galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
-{% endhighlight %}
+```
 
 ## **Gene Network: VKORC1**
 ***
