@@ -54,9 +54,9 @@ between genetic variations and how the human responds to medications. PharmGKB i
 > **PharmGKB is a secondary database which uses a combination of natural language processing methods, as well as hierarchical, in-house manual curation to mine clinical reports, journal articles, as well as primary databases to provide high quality pharmacogenomic data. Every entry includes a links and downloads section to help users visit the automatically generated portions of the database.**
 
 ### **Data Storage, Format, and Usage**
-![[The hierarchy of knowledge present in the PharmGKB database](https://s3.pgkb.org/attachment/New_PharmGKB_pyramid_-_Knowledge_Extraction.png)][logo3]
+![[The hierarchy of knowledge present in the PharmGKB database](https://github.com/tbrassel/tbrassel.github.io/assets/img/New_PharmGKB_pyramid_-_Knowledge_Extraction.png)][logo3]
 
-[logo3]: https://s3.pgkb.org/attachment/New_PharmGKB_pyramid_-_Knowledge_Extraction.png ("Knowledge Pyramid"")
+[logo3]: https://github.com/tbrassel/tbrassel.github.io/assets/img/New_PharmGKB_pyramid_-_Knowledge_Extraction.png "Knowledge Pyramid"
 
 > **PharmGKB is remarkable for its streamlined look and ample use of formatting on its webpage, creating an experience that is removed from typical databases. For example, Variant Annotation tables for particular genes include links to publications. The search bar suggests users add search terms together to create new combinations, in order to discover compare and contrast drugs, genes, and more. Format is in the form of lists of annotations and links to publications, with many sources pointing back to "AmiGO 2," a primary gene ontology database. The above image outlines how PharmGKB curates and selects it's content. The data found on PharmGKB is mainly used to determine drug interactions, dosing guidelines, as well as genes of pharmacogenomic significance for clinical researchers.**
 
