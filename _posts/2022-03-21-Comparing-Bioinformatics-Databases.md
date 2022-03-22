@@ -15,7 +15,7 @@ subtitle: How is the VKORC1 gene responsible for the large therapeutic dosage ra
 ![[The Leiden Open Variation Database, Part of the Human Variome Project](https://pbs.twimg.com/profile_images/2455207201/logo_2012-07-20_twitter_400x400.jpg)][logo1]
 
 [logo1]: https://pbs.twimg.com/profile_images/2455207201/logo_2012-07-20_twitter_400x400.jpg "LOVD"
-***
+
 > **The database documentation states that the LOVD, “focuses on the collection and display of DNA sequence variants,” with extensive support for complete clinical data as well as automatic annotation of VCF files. The most recent version 3.0 was released in 2007 and data is still being updated. Full documentation for the Leiden Open Variation Database can be found [here.](https://databases.lovd.nl/shared/docs/LOVD_manual_3.0.pdf)**
 
 ### **Types of Data and Biological Questions**
@@ -54,9 +54,9 @@ between genetic variations and how the human responds to medications. PharmGKB i
 > **PharmGKB is a secondary database which uses a combination of natural language processing methods, as well as hierarchical, in-house manual curation to mine clinical reports, journal articles, as well as primary databases to provide high quality pharmacogenomic data. Every entry includes a links and downloads section to help users visit the automatically generated portions of the database.**
 
 ### **Data Storage, Format, and Usage**
-![[The hierarchy of knowledge present in the PharmGKB database](https://github.com/tbrassel/tbrassel.github.io/assets/img/New_PharmGKB_pyramid_-_Knowledge_Extraction.png)][logo3]
+![[The hierarchy of knowledge present in the PharmGKB database](https://3.bp.blogspot.com/-rggZzD7zCTw/VgQdIK7gChI/AAAAAAAABt4/tA5WoOePKXU/s1600/pyramid-brokenout-web.png)][logo3]
 
-[logo3]: https://github.com/tbrassel/tbrassel.github.io/assets/img/New_PharmGKB_pyramid_-_Knowledge_Extraction.png "Knowledge Pyramid"
+[logo3]: https://3.bp.blogspot.com/-rggZzD7zCTw/VgQdIK7gChI/AAAAAAAABt4/tA5WoOePKXU/s1600/pyramid-brokenout-web.png "Knowledge Pyramid"
 
 > **PharmGKB is remarkable for its streamlined look and ample use of formatting on its webpage, creating an experience that is removed from typical databases. For example, Variant Annotation tables for particular genes include links to publications. The search bar suggests users add search terms together to create new combinations, in order to discover compare and contrast drugs, genes, and more. Format is in the form of lists of annotations and links to publications, with many sources pointing back to "AmiGO 2," a primary gene ontology database. The above image outlines how PharmGKB curates and selects it's content. The data found on PharmGKB is mainly used to determine drug interactions, dosing guidelines, as well as genes of pharmacogenomic significance for clinical researchers.**
 
