@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: VKORC1 Gene Ontology Enrichment Network Analysis with [Cytoscape](https://cytoscape.org/), an open source software platform for visualizing complex networks and integrating these with any type of attribute data.
@@ -10,7 +9,7 @@ subtitle: What can the gene network interactions of VKORC1 tell me about Warfari
 library(dplyr) 
 library(tidyr) 
 library(readr)
-{% highlight R linenos %}
+{% endhighlight %}
 
 
 ## **Preliminary data analysis**
