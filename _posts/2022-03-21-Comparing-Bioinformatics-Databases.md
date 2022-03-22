@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Comparing Two Bioinformatics Databases
-subtitle: What is the genetic origin of large therapeutic dosage range of the anticoagulant drug Warfarin?
+title: Comparing Bioinformatics Databases as Applied to a Gene of Interest
+subtitle: How is the VKORC1 gene responsible for the large therapeutic dosage range of the anticoagulant drug Warfarin?
 ---
 
 ## **VKORC1 Overview**
