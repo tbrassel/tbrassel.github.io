@@ -29,6 +29,8 @@ Cytoscape: a software environment for integrated models of biomolecular interact
 - Calculate network statistics using Apps
 - Use with other tools, such as R with sna/ igraph package or NetworkX, for more advanced analysis
 
+***
+
 # VKORC1 Analysis
 
 ## Load Libraries
@@ -67,5 +69,5 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 ### **Discussion**
 
-- In discussion of the GO network, the BINGO app did not include every detail that STRING had on their website, however it is not wrong. It is a little difficult to read, but the terms "drug transmembrane transporter activity", "xenobiotic transporter activity", and "xenobiotic-transporting ATPase activity" show up as significantly enriched. This is consistent with the described roles of each enzyme included on the STRING website. The STRING GO table includes more detail, including "omega-hydroxylase P450 pathway" and "drug metabolism", which more accurately describes the role of *VKORC1* and associated genes. From these interactions I can postulate that metabolism of Warfarin involves membrane transport in and out of cells as well as oxidation by various Cytochrome enzymes.
+- In discussion of the GO network, the BINGO app did not include every detail that STRING had on their website, however it is not wrong. The terms "drug transmembrane transporter activity", "xenobiotic transporter activity", and "xenobiotic-transporting ATPase activity" show up as significantly enriched. This is consistent with the described roles of each enzyme included on the STRING website. The STRING GO table includes more detail, including "omega-hydroxylase P450 pathway" and "drug metabolism", which more accurately describes the role of *VKORC1* and associated genes. From these interactions I can postulate that metabolism of Warfarin involves membrane transport in and out of cells as well as oxidation by various Cytochrome enzymes.
 
