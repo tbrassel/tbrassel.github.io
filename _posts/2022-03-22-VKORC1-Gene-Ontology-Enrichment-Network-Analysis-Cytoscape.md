@@ -67,7 +67,7 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 ### **Discussion**
 
-- *VKORC1* encodes the vitamin K epoxide reductase enzyme, which is responsible for converting vitamin K epoxide to vitamin K as part of the clot signalling pathway in humans. Polymorphisms in *VKORC1* are shown too be significant contributors to Warfarin dose variance, a common anticoagulant prescribed for a variety of conditions. As one can see from the Gene Network, the neighboring gene *CYP2D6* (Cytochrome P450 2D6), which is responsible for the metabolism of many drugs and environmental chemicals according to STRING, interacts significantly with *VKORC1*. The other genes are associated with the vitamin K metabolism pathway. I mainly gather from this network the significance of looking at more than one gene than *VKORC1* when using genetic assays to predict dosage of Warfarin. A complicated enzymatic ballet drives the metabolism of Warfarin.
+- *VKORC1* encodes the vitamin K epoxide reductase enzyme, which is responsible for converting vitamin K epoxide to vitamin K as part of the clot signalling pathway in humans. Polymorphisms in *VKORC1* are shown to be significant contributors to Warfarin dose variance, a common anticoagulant prescribed for a variety of conditions. The Gene Network indicates that the neighboring gene *CYP2D6* (Cytochrome P450 2D6), which is responsible for the metabolism of many drugs and environmental chemicals according to STRING, interacts significantly with *VKORC1*. The other genes are associated with the vitamin K metabolism pathway. I gather from this network the significance of looking at more than one gene than *VKORC1* when using genetic assays to predict dosage of Warfarin. A complicated enzymatic ballet drives the metabolism of Warfarin.
 
 ## **Gene Ontology Enrichment Network**
 
@@ -81,7 +81,7 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 ### **Discussion**
 
-- In discussion of the GO network, the BINGO app did not include every detail that STRING had on their website, however it is not wrong. The terms "drug transmembrane transporter activity", "xenobiotic transporter activity", and "xenobiotic-transporting ATPase activity" show up as significantly enriched. This is consistent with the described roles of each enzyme included on the STRING website. The STRING GO table includes more detail, including "omega-hydroxylase P450 pathway" and "drug metabolism", which more accurately describes the role of *VKORC1* and associated genes. From these interactions I can postulate that metabolism of Warfarin involves membrane transport in and out of cells as well as oxidation by various Cytochrome enzymes.
+- In discussion of the GO network, while still scientifically sound, the BINGO app did not include every detail that STRING had on their website. The terms "drug transmembrane transporter activity", "xenobiotic transporter activity", and "xenobiotic-transporting ATPase activity" show up as significantly enriched. This is consistent with the described roles of each enzyme included on the STRING website. The STRING GO table includes more detail, including "omega-hydroxylase P450 pathway" and "drug metabolism", which more accurately describes the role of *VKORC1* and associated genes. From these interactions I can postulate that metabolism of Warfarin involves membrane transport in and out of cells as well as oxidation by various Cytochrome enzymes.
 
 ### This is a test:
 
