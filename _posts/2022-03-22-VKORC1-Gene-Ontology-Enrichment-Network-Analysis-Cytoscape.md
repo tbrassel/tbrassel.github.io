@@ -83,3 +83,172 @@ galFiltered_edge <- read_csv(file='galFiltered_edge.csv')
 
 - In discussion of the GO network, the BINGO app did not include every detail that STRING had on their website, however it is not wrong. The terms "drug transmembrane transporter activity", "xenobiotic transporter activity", and "xenobiotic-transporting ATPase activity" show up as significantly enriched. This is consistent with the described roles of each enzyme included on the STRING website. The STRING GO table includes more detail, including "omega-hydroxylase P450 pathway" and "drug metabolism", which more accurately describes the role of *VKORC1* and associated genes. From these interactions I can postulate that metabolism of Warfarin involves membrane transport in and out of cells as well as oxidation by various Cytochrome enzymes.
 
+### This is a test:
+
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;font-family: monospace;">
+Sequence ID
+</th>
+<th style="text-align:left;font-family: monospace;">
+51-60aa
+</th>
+<th style="text-align:left;font-family: monospace;">
+61-70aa
+</th>
+<th style="text-align:left;font-family: monospace;">
+71-80aa
+</th>
+<th style="text-align:left;font-family: monospace;">
+81-90aa
+</th>
+<th style="text-align:left;font-family: monospace;">
+91-100aa
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;font-family: monospace;">
+AAM08403.1
+</td>
+<td style="text-align:left;font-family: monospace;">
+RWMNESITAL
+</td>
+<td style="text-align:left;font-family: monospace;">
+LIGLGTGVVI
+</td>
+<td style="text-align:left;font-family: monospace;">
+LLISRGKNS-
+</td>
+<td style="text-align:left;font-family: monospace;">
+HLLVFSEDLF
+</td>
+<td style="text-align:left;font-family: monospace;background-color: #e6e6e6 !important;">
+FIYLLPPIIF
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-family: monospace;">
+sp|Q68KI4.2|NHX1_ARATH
+</td>
+<td style="text-align:left;font-family: monospace;">
+RWMNESITAL
+</td>
+<td style="text-align:left;font-family: monospace;">
+LIGLGTGVTI
+</td>
+<td style="text-align:left;font-family: monospace;">
+LLISKGKSS-
+</td>
+<td style="text-align:left;font-family: monospace;">
+HLLVFSEDLF
+</td>
+<td style="text-align:left;font-family: monospace;background-color: #e6e6e6 !important;">
+FIYLLPPIIF
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-family: monospace;">
+sp|Q84WG1.2|NHX3_ARATH
+</td>
+<td style="text-align:left;font-family: monospace;">
+RWMNESITAL
+</td>
+<td style="text-align:left;font-family: monospace;">
+IIGSCTGIVI
+</td>
+<td style="text-align:left;font-family: monospace;">
+LLISGGKSS-
+</td>
+<td style="text-align:left;font-family: monospace;">
+RILVFSEDLF
+</td>
+<td style="text-align:left;font-family: monospace;background-color: #e6e6e6 !important;">
+FIYLLPPIIF
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-family: monospace;">
+AAM08405.1
+</td>
+<td style="text-align:left;font-family: monospace;">
+RWVNESITAI
+</td>
+<td style="text-align:left;font-family: monospace;">
+LVGAASGTVI
+</td>
+<td style="text-align:left;font-family: monospace;">
+LLISKGKSS-
+</td>
+<td style="text-align:left;font-family: monospace;">
+HILVFDEELF
+</td>
+<td style="text-align:left;font-family: monospace;background-color: #e6e6e6 !important;">
+FIYLLPPIIF
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-family: monospace;">
+AAM08407.1
+</td>
+<td style="text-align:left;font-family: monospace;">
+YYLPEASASL
+</td>
+<td style="text-align:left;font-family: monospace;">
+LIGLIVGGLA
+</td>
+<td style="text-align:left;font-family: monospace;">
+NISNTETSIR
+</td>
+<td style="text-align:left;font-family: monospace;">
+TWFNFHDEFF
+</td>
+<td style="text-align:left;font-family: monospace;background-color: #e6e6e6 !important;">
+FLFLLPPIIF
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-family: monospace;">
+AAM08406.1
+</td>
+<td style="text-align:left;font-family: monospace;">
+HYLPEASGSL
+</td>
+<td style="text-align:left;font-family: monospace;">
+LIGLIVGILA
+</td>
+<td style="text-align:left;font-family: monospace;">
+NISDTETSIR
+</td>
+<td style="text-align:left;font-family: monospace;">
+TWFNFHEEFF
+</td>
+<td style="text-align:left;font-family: monospace;background-color: #e6e6e6 !important;">
+FLFLLPPIIF
+</td>
+</tr>
+<tr>
+<td style="text-align:left;font-family: monospace;font-weight: bold;background-color: #e6e6e6 !important;">
+Conservation Output
+</td>
+<td style="text-align:left;font-family: monospace;font-weight: bold;background-color: #e6e6e6 !important;">
+_::_*:__::
+</td>
+<td style="text-align:left;font-family: monospace;font-weight: bold;background-color: #e6e6e6 !important;">
+::*___*___
+</td>
+<td style="text-align:left;font-family: monospace;font-weight: bold;background-color: #e6e6e6 !important;">
+_:_.__..__
+</td>
+<td style="text-align:left;font-family: monospace;font-weight: bold;background-color: #e6e6e6 !important;">
+__:_*_:::*
+</td>
+<td style="text-align:left;font-family: monospace;font-weight: bold;background-color: #e6e6e6 !important;background-color: #e6e6e6 !important;">
+*::*******
+</td>
+</tr>
+</tbody>
+</table>
+
