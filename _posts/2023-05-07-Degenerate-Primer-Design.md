@@ -5,3 +5,5 @@ title: Degenerate primer design through shared sequence domain identification ac
 <script>
     window.location.href = "https://tbrassel.github.io/DegeneratePrimerDesign/";
 </script>
+
+[If you have JavaScript disabled, click here to be redirected](https://tbrassel.github.io/DegeneratePrimerDesign/)
