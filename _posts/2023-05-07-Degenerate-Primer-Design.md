@@ -1,6 +1,5 @@
 ---
 layout: post
 title: Degenerate primer design through shared sequence domain identification across six members of the A. thaliana NHX gene family
-subtitle: # [View the analysis here](https://tbrassel.github.io/DegeneratePrimerDesign/)
 ---
-
+# [View the analysis here](https://tbrassel.github.io/DegeneratePrimerDesign/)
