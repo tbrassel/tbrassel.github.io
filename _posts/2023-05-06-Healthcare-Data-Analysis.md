@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Healthcare Data Analysis with R and SQL (in progress)
+title: Healthcare Data Analysis with R and SQL
 subtitle: Meaningful insights with interactive graphs
 ---
 <script>
