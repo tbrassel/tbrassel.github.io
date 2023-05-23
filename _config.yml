@@ -71,7 +71,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # Add a search button to the navbar
-post_search: true
+post_search: true 
 
 # The keywords to associate with your website, for SEO purposes
 #keywords: "Geneious Prime, Management, JIRA, Atlassian, Manager, Leadership, Lead, SQL, MySQL, SQL Passthrough, SQLite, Bioinformatics, R, RStudio, Python, Biopython, Data Science, Biostatistics, Biology, tensorflow, NumPy, R notebooks, RMarkdown, Markdown, Jupyter Notebooks, JupyterLab, Bioconductor, NGS,  Databases, GWAS, UniProt, Ensembl, GenBank, BioMart, scAlign, PharmGKB, NCBI, Genomics, Computer Science, Statistics, ggplot2, CellBench, Single cell, single-cell, scRNA, scRNA-seq, e-QTL, differential expression, package development, best practices, roxygen2, heatmaps, Robetta, trRosetta, DESeq2, edgeR, Biostrings, ClustalW, MAFFT, Blast, Docker, SLURM, Amazon, AWS EC2, Bash, VSCode, Atom, Project Jupyter, Linux, Ubuntu, Arch, BLAST, Science, Analysis, LaTex, US Citizen, Citizen"
