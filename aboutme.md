@@ -1,11 +1,17 @@
 ---
 layout: page
 title: Tyler Brassel
-subtitle: Data Professional
-description: Data Professional
+subtitle: Data Engineer: Data Analytics, Business Analysis, Team Management
+description: Data Engineer: Data Analytics, Business Analysis, Team Management
 ---
 ##### **University of California Davis**
-- B.Sc Biotechnology, Bioinformatics Emphasis 
+- B.Sc Biotechnology, Computer Science Emphasis 
 
 ### Overview
-In my previous role as a Bioinformatics Data Curator with Genentech, I played a key role in an international database upgrade and migration initiative that enhanced scientist productivity and secured intellectual property. As a Healthcare Database Engineer, I have successfully managed large datasets using Snowflake, Microsoft SQL Server, Salesforce, and Informatica Enterprise Cloud Data Management. I have scheduled Python and R scripts to process sensitive healthcare data, generating reports and data visualizations that drive effective decision-making. My skills in R, Python, and SQL would make me a valuable asset in meeting your organization's needs. I am excited to discuss how my expertise aligns with your mission and goals, and how I can contribute to your team's success.
+Experienced Data Engineer specializing in data-driven solutions and data analytics. Background in bioinformatics and healthcare data analysis, with proficiency in Excel, SQL, Snowflake, Python, and R. Committed to driving data-centric solutions for improved management and migration programs. Recent completion of Google Business Intelligence Professional Certificate. 
+
+In my role as a Healthcare Data Engineer at Colorado Community Managed Care Network, I administered databases remotely using Snowflake, MS-SQL, Salesforce, and Informatica. I utilized Python and R for ETL processes, managed data storage with Powershell scripts, and served as a Linux expert, provisioning a Kubernetes cluster for Apache Airflow job automation.
+
+As a Bioinformatics Data Analyst at Genentech, I accelerated drug discovery by categorizing data through algorithmic sequence analysis. Developed parallelized data pipelines in R, Excel, and SQL, and contributed to the transition to a new central database. My internship at UC Davis involved enhancing single-cell genomic data integration and machine learning projects in Python and R, with collaborative efforts in deployment and documentation.
+
+Looking forward to leveraging my skills for innovative projects. Let's connect!
