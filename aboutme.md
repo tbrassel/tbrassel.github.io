@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Tyler Brassel
-subtitle: Data Engineer: Data Analytics, Business Analysis, Team Management
-description: Data Engineer: Data Analytics, Business Analysis, Team Management
+subtitle: Data Engineer - Data Analytics, Business Analysis, Team Management
+description: Data Engineer - Data Analytics, Business Analysis, Team Management
 ---
 ##### **University of California Davis**
 - B.Sc Biotechnology, Computer Science Emphasis 
