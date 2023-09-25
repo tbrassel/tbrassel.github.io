@@ -40,5 +40,6 @@ describes how to increase the dependability and security of IT services.
 ### Training
 ##### FDA Compliance and Corporate Conduct
 > Genentech On-boarding for Contractors, 2020
+
 ##### Building Tidy Tools for R Package Development
 > Rstudio (now Posit) for Genentech Employees, 2021, [GitHub](https://github.com/rstudio-conf-2020/build-tidy-tools)
