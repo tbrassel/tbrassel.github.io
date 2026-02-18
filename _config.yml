@@ -15,8 +15,10 @@ author: Tyler Brassel
 
 navbar-links:
   About Me: "aboutme"
-  Shiny Apps:
-    - Shinylive Demo: "https://shinylive.io/py/app/#code=NobwRAdghgtgpmAXGKAHVA6VBPMAaMAYwHsIAXOcpMAYgAIA5YixOgFQAsBLAZzrVR0Arjzh8odACZwAbnAA2xVPHJ05AJx5dSdYgDM6qRWQhcIcDAB0I1rjFTF1ZOgCsepa3vXEYhqGQ55LgAjOjsHJzoABX8Oa1t7R2cYfyNmIOCsbDTnKD4jMgSI51QoCEk8-nzJT29fHgBreTgodQgMIPNWgH0YYml5MMTIgBliAHNeMi5CACU4cfUxLQ8ILx86RubW9tQlveJCZbNxoeK6AGUyMor1SQvCKGb1Wo2ebghsM6S6AEF0PB0ACSEFQQjIPEBAHlwWCIYCLsdSICluU4OpAUIuK96h9sBgsd9Ir9TClpqQoahyRAePFoKT-NoIN1RGRphBxnwALx-BnUynUngACjMFHUMiedB5ACYAAyywGKJRS9jqIRwQFGKDYbrBcFkUhcyxgKLybXGzVQERwXX6w3GmLW40ASjpXHUvBVqEkGCWUEk3UIPBkQpiASF3W6ei4zUjzqwrUozgA9HRje7eBggzIXXT6ABhHxwuB0AIlmBmOxCXw3OgpAAeVd8Evk6r4+joLUIHDoehaZCES2solK8m6zQ5AV6ZhVFYgIo9PGAxpHT3HlHGAWNAF1XTS4KP15OOL0oPXZ2eF7xl2BV2OJ5u4mBd8OD2uAO5cSRTuezsxXpcVzfMdP2-J8X33Q9QJ-M8L3rACbzvbpoPAvdUDga57w3H8Zx5OcEONdDMKPR8dzQjC1wfGDzzwy8M0AsAiMo7DUOsJiQK-HCID-ed6JvdjkM41jQQojiwNPGi6zoxd+NEwSwLIvNVSgGcJEUSYeGmQg6CWRYkW4voBl7RxSw4Et6Kkfw8gw6wAA0VXojBJG8VAhQAcglD0MOwNzATPXguQARj3L4eT4jzWi4by3O3JSrkcEsy17ftBxLaB4D4Vd1H8BRsE8FKlm6dKxBVWys2IVsYBpDADSCTShT3ax6AeJ5ErMsJQXBZL-FS2kaUeZ4VSuG5WnuAb0QauyWXGyQVR4cb1AwaMyG6MhsppPRHBgIVbMaiB6DYbLVLodSphmHSFiWHgVgM-oFGM9QwkXax1N0lUxg0rT5j066mSFBtui4MUuQAVnlWU91ehYlqBnbptayRAWwPb6F+a7Di4HLTJLPseqWOhir4T8Amxus7vkF6Jl0paCptQmVVxgdCsJukBG6QkeSxBNxhtPRWy-IVrDoYXhC4DAzP9QNSAochBe4kWFa565OQwTTsGaOWFa1kXjV1sAhe1uhkwAKkuFJ5EGzbVE2x69jgG2yQoWaKHrZxjeTA3tbtwFrmCZoaqgP2SxAT3DatsgAFotAALzgVgeHN54AG5Q4VgBfOlDcMJYfcD-3feaOgQ-lrPhfDqOuFj+PE-RFOS61jP64VvXdabkW9wV508FDrnvHfTXDa5khKvnVPDYAFm7tvta50pzBAhR5AH0uta5sw4W6bLJG0W02VIYVCOMVbsjgC00xNYxSxPs+bzJHIMjPw-mFMcwyKnleZ7F9fwRZBQ4EIMggswA6k8pjIOj8wAAE06AADVIp51PvgOgiFgIkS3EgoCUEhIQIElRJ8gJCJyRQopaeWsu5C0sIUMgBY-QUFJjwII0hNB0GJj2JKJB7DgjgLNOcTZ+DlCko2GA1Y1BPDbPEZwItZ5lAUMhRey80xULXp1FaDCvwTUwcxY8EDESjjoCMFiZ85xciQng6cEBAQNhMagsxDZAQtnVFyceGAAAcgJNIHi5BgQKfk+RwC5GUOwjJSC-zZCcHg5D66UMocojeaimFAKQsQjBYBdGSgAOrYKQcYpJQlzGWLPNYrB4k7GiNbP46UGBJ6bAoKgLxPj+FBIoAEvkTJQnsk5JE5uSiv4qJZIwjRjE5J4IgVEUS+jDHZLMFyXBLF8mCJmcMuZpSHH+MChgaU7jan1N8U0-xgSyRtNZB0iJ78dY9IwN-VRAz1BAIEskghJpxmZIUlMiAiziIoXmVY+5eSVliIqRgEGWzPHeN2WSfZrSQnHPCV0j+HdDZws-uVEeCis5uLHsi4gsIf45DucYQKLozkry5tisgG8XYrQ0MERk21CJLG3gA7hLJ0KECirSMACLtZIroJEva1hpAGFEOKCaVzWAgjhJCXQOKyCsBhOS8EUrRC-VIKwREKqIDOkQKHAAAmSuEurURMKwMYIUTwyBGjAL8TYjw2TohyLmeugrDAEoatq0hID4FBwciojAnqPQIMmjYUhXADBXJNcwY+6EGpSh5MaO+xgH5IExVraM4w-KSQKKrIQwQcjCi5aXLN0wyAa3TM9TlKaFZnlVhhbo9YzTBAUEAuBXkyB5QraQqt9Ya0rXVoHJt-qwHNALVnat81-BigImAUB3kdyAj4oOhBEEP4XSZtxNNmdDYKFDR1OEEaVptujc6WN58cgv0Qe6ld6xfBnrMOZYYuQxCAh5j4boDhRTPvGDkT9xbmibpXoIHkaKP7jC-aa+ifkxBAJnW2s+i6g7OhHR-AA1HQF9MA33EFFEGldCtUOgd-XAIB9FHUrr2iupYa7DD-roHqmVhrKDGspaHZ1dtGVOxZf-dlbqU1XO6BUa4XofQABErIADFsrwCFMXFdblTEsTcqwYA4b5PHgatuYlpc5OoJQop5BKmdNCXU5prOblZnHj08p315nHzGcrSLMzRChKWfDb8sC6mU1p3I4bNjMxqQqihuMLADK-Mij6QJqASHha+aZQGHgrL2VehCwApkwBZSxWDVnSjg510OmS07S4CWxCsBADFjj8WuNiAzvrYNAgVT-FcmzLE7j0QaEBNIPU4wuSHXVM6MAac8DgGKtQRy2Z8BEGlkmagmisLaPwDN+S6Du5DOIiM+bK2PxZOWzB9t1gQZgoAMxArwOsyeGzluIgNDwKArdnEAE48AHZO1UvA53jSXeINd27GAADsj3zvrKe291JGFPs3Zq84gAbP9nx6zgXA4+19mrwKjvQ9O69zZ73QdI72y9o7D31l-Ze1jq74PrBQ-+5PdHGAnsk7B63FHL24cY4u9jsnEBnGT0qQTl7CO2ffYe0d2Hx2wV05xxAfbk8jt-eZ3z0n323FHapxgaHcv6cQ9cY957Z2fFi-Z84p7T31k+NFyD+XyPNfK82Wr8X+2-uc+e-DyeeuGd44wDzoHzuzfq9xz4o7wLqe0+97b37-23GE9e0HxH7P9t+817LqP-OLdS6Z6Hm3MfDuh9l176P33oeo5Oyzl3Fu49G7T8C4v5PNdK+ew99PDOtfrNV5j4PMfKfPdVznpPuPNn+8d0X1vrve+p7Oy33PGu-tHc2U3gf4+q+K7BTP+vyf2-Z9Z+bnveBnHC-h7rwfFvgXOOn7zsf3eOfu5h-35fe3-vH+t6fjfEvjt98B7Ps-93-to953vuf5+pfPaBwfx9yfzj2V3hyANt3+wDxp0j3X2AOcWBUqTLyB0T0fwdynwALf0f0Z2gNV2h0rxALD1r1ey7zQOr211gIINjyIKXwgP1xV1vwoOvyf0NyzxFzoIbyOzL1HzgPF0n3O2cRl2JzABgXRC0GHkcFbkhzd02QQP72NFEM0BmAqkkJq2kMFzBQ-2ZwULEOUMUBeAPzwCQK30wJ0KUIkIMOsGkMQMtwYO0JEN0IsNdz+0qTcTkNfzMPEJUMsIgGkNYKe0EI72W0UK8P0IFyMLdyN2CMcO8KkIYO5y3zsJgM8L0NUM30qX4J5y9xCNSJ8MQKgMLxSKcIt0F0SOPwrwcPMNiLUIiNkMKMqNCLSN8LBQSMCPRyKOqNx2hwSILw8IaNyLiP4J8Qd3aP6OKK6K13cOOw6LCItzcQyMSNh2iKqNmKsPO0qVkOO3sJyPGKf26Ofwv2N2WMaLyIvwwOcXD01xmKaOkJ8VcJML6J2M6OaKe0qUP0OOmLGOeNuIiLcLYJbyeNWOaK5wvwN1MK+KBOkPz0SOV2yJiMhM13uIuIoOuJ8OkMnzwGgL+1RKkIiIeymIqMBKaLtwiPzy2OOIGMMMqRT0uL3yJNOJsJTxlwpN2P23mND3x2ewBPhJuIiL+2oJnxxJXwCK2M+PpNxJrymPwIhJuI5M0LYMJJ5LRJgOMJGOSJlNOOhO33BPFKpOO2VyD11NxxsOhzVO5JWNlL90SK-zhItNOPZNNK5JZOeJsP8PqKNL2L5LKJ1KVOcMmIB2Bw9JJNaIDMNN9LUPWNBJgMePDN9wiJR2ezpNjKfxcNsOFzDLtLiLdP2MJPdEmFMEeFd3ZP5MXwvwULzMrELJqx+0O0xIv0qTpIrILPZz8LxLrK-wxREKbJmBbOfzrPZIBO7KrOsBrOhKhIiMbPUHzJ7PCLeMSKxOCKHPZxrNeIv1bPWU7JgSXMGPjP7Oe03O3OrPOwLx+LnPLKnMrN7MZ02WoMHIvObLiJBJLLLwe3POnOHOaMVzrJsMnPfIz1TOBXyLfMvKLN+LrLuOEK3PvJnIjJTxvJVPVKgr-LiITP22gIPOgo-JrP4LcXRNqMXMwuXND0qWh3UIiMNMPKsPwugNzMIriI0PgtTIoroot32L+IezvOQqPNTNwuIoIq4rWNXPtw+IwoEuaP4Ke2DNNyQpAqPOH02Q7P4tkrWM2SRPjyuK7JYrWKtK0I0pkofNgrAv232N-OUogBrN7z3MFM0rEprJBN4uF1fJsrMprI0N4q5yUoMrWPsvbPwuAq8peKMtLNorEtPIYOMpROcoCuwq1zCuYtCpgJrwiupM8pgu8svzQv3NSo-K1PUtErMrIqFzrJBNMoCrwqKuSsgsouaI0J8VvMQuqrZK9IFLLKirSs-MYP2w4oaq0vEv+0kuIrFOqvKrrNUp6oStXMAuIP8vausK1321Uuyt7OH0nkl3IqWtd1KJavyoMv623CAA"
+  Projects:
+    - #Ordering Demo: "https://order.tier1protocol.app"
+    - Audit Demo: "https://triage.tier1protocol.app"
+  Resume: #"/assets/TylerBrasselResume.pdf"
   GitHub: "https://github.com/tbrassel"
 
 # --- Logo --- #
@@ -38,9 +40,10 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "tbrassel@duck.com"
+  email: tyler@tier1protocol.network
 # rss: true  # remove this line if you don't want to show an RSS link at the bottom
   github: tbrassel
+  linkedin: https://www.linkedin.com/in/tyler-brassel/
 #  telephone: +14159998888
 
 
@@ -52,9 +55,9 @@ social-network-links:
 
 # Select which social network share links to show in posts
 #share-links-active:
-#  twitter: true
-#  facebook: true
-#  linkedin: true
+email: true
+github: true
+linkedin: true
 #  vk: false
 
 # How to display the link to your website in the footer
@@ -74,7 +77,7 @@ feed_show_tags: true
 post_search: true 
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "Geneious Prime, Management, JIRA, Atlassian, Manager, Leadership, Lead, SQL, MySQL, SQL Passthrough, SQLite, Bioinformatics, R, RStudio, Python, Biopython, Data Science, Biostatistics, Biology, tensorflow, NumPy, R notebooks, RMarkdown, Markdown, Jupyter Notebooks, JupyterLab, Bioconductor, NGS,  Databases, GWAS, UniProt, Ensembl, GenBank, BioMart, scAlign, PharmGKB, NCBI, Genomics, Computer Science, Statistics, ggplot2, CellBench, Single cell, single-cell, scRNA, scRNA-seq, e-QTL, differential expression, package development, best practices, roxygen2, heatmaps, Robetta, trRosetta, DESeq2, edgeR, Biostrings, ClustalW, MAFFT, Blast, Docker, SLURM, Amazon, AWS EC2, Bash, VSCode, Atom, Project Jupyter, Linux, Ubuntu, Arch, BLAST, Science, Analysis, LaTex, US Citizen, Citizen"
+keywords: "inventory, operations, audit, reconciliation, analytics, excel, vba, python, process improvement, management, JIRA, Atlassian, Manager, Leadership, Lead, SQL, MySQL, SQL Passthrough, SQLite, Bioinformatics, R, RStudio, Python, Biopython, Data Science, Biostatistics, Biology, tensorflow, NumPy, R notebooks, RMarkdown, Markdown, Jupyter Notebooks, JupyterLab, Bioconductor, NGS,  Databases, GWAS, UniProt, Ensembl, GenBank, BioMart, scAlign, PharmGKB, NCBI, Genomics, Computer Science, Statistics, ggplot2, CellBench, Single cell, single-cell, scRNA, scRNA-seq, e-QTL, differential expression, package development, best practices, roxygen2, heatmaps, Robetta, trRosetta, DESeq2, edgeR, Biostrings, ClustalW, MAFFT, Blast, Docker, SLURM, Amazon, AWS EC2, Bash, VSCode, Atom, Project Jupyter, Linux, Ubuntu, Arch, BLAST, Science, Analysis, LaTex, US Citizen, Citizen"
 
 # --- Colours / background image --- #
 
