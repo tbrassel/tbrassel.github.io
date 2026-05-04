@@ -86,3 +86,740 @@ between genetic variations and how the human responds to medications. PharmGKB i
 [^5]: M. Whirl-Carrillo, E.M. McDonagh, J. M. Hebert, L. Gong, K. Sangkuhl, C.F. Thorn, R.B. Altman and T.E. Klein. "Pharmacogenomics Knowledge for Personalized Medicine" Clinical Pharmacology & Therapeutics (2012) 92(4): 414-417.
 
 [^6]: VKORC1—Overview. (n.d.). Retrieved October 15, 2019, from PharmGKB website: [https://www.pharmgkb.org/gene/PA133787052/overview](https://www.pharmgkb.org/gene/PA133787052/overview)
+
+
+00_Control_Panel
+    tPhrases
+    tWeights
+01_Output
+    tOutput
+02_Static_Page_Analysis
+    optional spilled diagnostic output
+03_Manual_Review
+    manual labels / reviewer notes
+04_Training_Set
+    later reviewed examples
+feature_name                    match_type      phrase
+has_age_threshold               CONTAINS        18+
+has_age_threshold               CONTAINS        21+
+has_age_threshold               CONTAINS        over 18
+has_age_threshold               CONTAINS        over 21
+has_age_threshold               CONTAINS        18 years of age
+has_age_threshold               CONTAINS        21 years of age
+has_age_threshold               CONTAINS        age of majority
+has_age_threshold               CONTAINS        legal age
+has_age_threshold               CONTAINS        must be 18
+has_age_threshold               CONTAINS        must be 21
+has_age_verification_phrase      CONTAINS        age verification
+has_age_verification_phrase      CONTAINS        verify your age
+has_age_verification_phrase      CONTAINS        age check
+has_age_verification_phrase      CONTAINS        confirm your age
+has_age_verification_phrase      CONTAINS        validate your age
+has_age_verification_phrase      CONTAINS        certify that you are
+has_age_verification_phrase      CONTAINS        by entering you confirm
+has_age_verification_phrase      CONTAINS        I am at least
+has_age_verification_phrase      ALL_TERMS       verify|age
+has_age_verification_phrase      ALL_TERMS       confirm|age
+has_dob_phrase                  CONTAINS        date of birth
+has_dob_phrase                  CONTAINS        birth date
+has_dob_phrase                  CONTAINS        birth month
+has_dob_phrase                  CONTAINS        birth year
+has_dob_phrase                  CONTAINS        mm/dd/yyyy
+has_dob_phrase                  ALL_TERMS       date|birth
+has_dob_phrase                  ALL_TERMS       month|day|year
+has_gate_action                 CONTAINS        enter
+has_gate_action                 CONTAINS        exit
+has_gate_action                 CONTAINS        continue
+has_gate_action                 CONTAINS        submit
+has_gate_action                 CONTAINS        confirm
+has_gate_action                 CONTAINS        agree
+has_gate_action                 CONTAINS        yes, I am
+has_gate_action                 CONTAINS        I agree
+has_gate_structure              CONTAINS        age gate
+has_gate_structure              CONTAINS        age-gate
+has_gate_structure              CONTAINS        age modal
+has_gate_structure              CONTAINS        age popup
+has_gate_structure              CONTAINS        age verification modal
+has_gate_structure              CONTAINS        restricted access
+has_gate_structure              CONTAINS        access restricted
+has_gate_structure              CONTAINS        you must be of legal age
+has_gate_structure              ALL_TERMS       age|gate
+has_gate_structure              ALL_TERMS       access|restricted
+has_gate_script                 CONTAINS        agegate
+has_gate_script                 CONTAINS        age_gate
+has_gate_script                 CONTAINS        age-check
+has_gate_script                 CONTAINS        agecheck
+has_gate_script                 CONTAINS        age-verification
+has_gate_script                 CONTAINS        ageverification
+has_gate_script                 CONTAINS        verify-age
+has_gate_script                 CONTAINS        verifyage
+has_gate_cookie                 CONTAINS        age_verified
+has_gate_cookie                 CONTAINS        ageverified
+has_gate_cookie                 CONTAINS        age_confirmed
+has_gate_cookie                 CONTAINS        ageconfirmed
+has_gate_cookie                 CONTAINS        verify_age
+has_gate_cookie                 CONTAINS        confirmed_age
+has_restricted_context          CONTAINS        adult
+has_restricted_context          CONTAINS        mature
+has_restricted_context          CONTAINS        age restricted
+has_restricted_context          CONTAINS        restricted product
+has_restricted_context          CONTAINS        not intended for minors
+has_restricted_context          CONTAINS        minors are prohibited
+has_store_context               CONTAINS        add to cart
+has_store_context               CONTAINS        checkout
+has_store_context               CONTAINS        shopping cart
+has_store_context               CONTAINS        product
+has_store_context               CONTAINS        quantity
+has_store_context               CONTAINS        shipping
+has_store_context               CONTAINS        payment
+has_policy_context              CONTAINS        privacy policy
+has_policy_context              CONTAINS        terms of service
+has_policy_context              CONTAINS        terms and conditions
+has_policy_context              CONTAINS        refund policy
+has_policy_context              CONTAINS        shipping policy
+has_policy_context              CONTAINS        cookie policy
+has_review_blocker              CONTAINS        enable javascript
+has_review_blocker              CONTAINS        checking your browser
+has_review_blocker              CONTAINS        access denied
+has_review_blocker              CONTAINS        forbidden
+has_review_blocker              CONTAINS        captcha
+has_review_blocker              CONTAINS        verify you are human
+has_review_blocker              CONTAINS        cloudflare
+has_review_blocker              CONTAINS        blocked
+has_review_blocker              CONTAINS        unavailable
+has_review_blocker              CONTAINS        password protected
+has_review_blocker              CONTAINS        coming soon
+has_review_blocker              CONTAINS        domain for sale
+Table: tWeights
+feature_name                    weight    pass_group
+has_age_threshold               5         AGE
+has_age_verification_phrase      5         AGE
+has_dob_phrase                  4         AGE
+has_gate_action                 3         GATE
+has_gate_structure              4         GATE
+has_gate_script                 3         GATE
+has_gate_cookie                 3         GATE
+has_restricted_context          2         CONTEXT
+has_store_context               1         CONTEXT
+has_policy_context              0         NEUTRAL
+has_review_blocker              -4        BLOCKER
+has_policy_only                 -4        PENALTY
+has_boilerplate_only            -5        PENALTY
+NORMTEXT =LAMBDA(x,LET(y,LOWER(IFERROR(x&"","")),z1,SUBSTITUTE(y,CHAR(160)," "),z2,SUBSTITUTE(z1,CHAR(10)," "),z3,SUBSTITUTE(z2,CHAR(13)," "),z4,SUBSTITUTE(z3,CHAR(9)," "),z5,SUBSTITUTE(z4,"&nbsp;"," "),z6,SUBSTITUTE(z5,"&amp;"," and "),z7,SUBSTITUTE(z6,"-"," "),z8,SUBSTITUTE(z7,"_"," "),z9,SUBSTITUTE(z8,"/"," "),TRIM(z9)))
+AG_NORMALIZE_URL =LAMBDA(url,LET(raw,IFERROR(TRIM(url&""),""),IF(raw="","",LET(l,LOWER(raw),IF(OR(LEFT(l,7)="http://",LEFT(l,8)="https://"),raw,"https://"&raw)))))
+AG_FETCH_HTML =LAMBDA(normalizedUrl,IF(normalizedUrl="","",IFERROR(NORMTEXT(LEFT(WEBSERVICE(normalizedUrl),32700)),"")))
+AG_FETCH_STATUS =LAMBDA(normalizedUrl,html,IF(normalizedUrl="","",IF(html="","FETCH_ERROR","OK")))
+MATCH_SIGNAL =LAMBDA(html,matchType,pattern,LET(h,html,p,NORMTEXT(pattern),mt,UPPER(TRIM(matchType&"")),IF(mt="CONTAINS",--ISNUMBER(SEARCH(p,h)),IF(mt="ALL_TERMS",--AND(ISNUMBER(SEARCH(TEXTSPLIT(p,"|"),h))),IF(mt="ANY_TERMS",--OR(ISNUMBER(SEARCH(TEXTSPLIT(p,"|"),h))),0)))))
+AG_FEATURE_HIT =LAMBDA(html,feature,IFERROR(LET(rows,FILTER(HSTACK(tPhrases[match_type],tPhrases[phrase]),(LOWER(tPhrases[feature_name])=LOWER(feature))*(tPhrases[phrase]<>"")),mts,CHOOSECOLS(rows,1),pats,CHOOSECOLS(rows,2),--OR(MAP(mts,pats,LAMBDA(mt,p,MATCH_SIGNAL(html,mt,p))))),0))
+AG_RAW_HITS =LAMBDA(html,fetchStatus,LET(features,tWeights[feature_name],MAP(features,LAMBDA(f,IF(OR(fetchStatus<>"OK",LOWER(f)="has_boilerplate_only",LOWER(f)="has_policy_only"),0,AG_FEATURE_HIT(html,f))))))
+AG_FINAL_HITS =LAMBDA(rawHits,LET(features,tWeights[feature_name],policyHit,XLOOKUP("has_policy_context",features,rawHits,0),nonBoilerplateEvidence,SUM(FILTER(rawHits,(features<>"has_policy_context")*(features<>"has_policy_only")*(features<>"has_boilerplate_only"),0)),policyOnly,--AND(policyHit=1,nonBoilerplateEvidence=0),boilerplateOnly,policyOnly,IF(features="has_policy_only",policyOnly,IF(features="has_boilerplate_only",boilerplateOnly,rawHits))))
+AG_SCORE =LAMBDA(hits,SUM(hits*tWeights[weight]))
+AG_HAS_GROUP =LAMBDA(hits,groupName,SUM(FILTER(hits,UPPER(tWeights[pass_group])=UPPER(groupName),0))>0)
+AG_MATCHED_PHRASES =LAMBDA(html,fetchStatus,IF(fetchStatus<>"OK","",IFERROR(TEXTJOIN(" | ",TRUE,UNIQUE(FILTER(tPhrases[feature_name]&":"&tPhrases[phrase],(tPhrases[phrase]<>"")*ISNUMBER(XMATCH(tPhrases[feature_name],tWeights[feature_name]))*MAP(tPhrases[match_type],tPhrases[phrase],LAMBDA(mt,p,MATCH_SIGNAL(html,mt,p)))))),"")))
+AG_DECISION =LAMBDA(normalizedUrl,fetchStatus,staticScore,hits,[minScore],LET(threshold,IF(ISOMITTED(minScore),8,minScore),IF(normalizedUrl="","",IF(fetchStatus<>"OK","REVIEW",IF(AND(staticScore>=threshold,AG_HAS_GROUP(hits,"AGE"),AG_HAS_GROUP(hits,"GATE"),NOT(AG_HAS_GROUP(hits,"BLOCKER")),XLOOKUP("has_boilerplate_only",tWeights[feature_name],hits,0)=0),"PASS","REVIEW")))))
+AGEGATE_TRIAGE =LAMBDA(url,[minScore],LET(normalizedUrl,AG_NORMALIZE_URL(url),html,AG_FETCH_HTML(normalizedUrl),fetchStatus,AG_FETCH_STATUS(normalizedUrl,html),rawHits,AG_RAW_HITS(html,fetchStatus),hits,AG_FINAL_HITS(rawHits),staticScore,AG_SCORE(hits),matchedPhrases,AG_MATCHED_PHRASES(html,fetchStatus),finalResult,IF(ISOMITTED(minScore),AG_DECISION(normalizedUrl,fetchStatus,staticScore,hits),AG_DECISION(normalizedUrl,fetchStatus,staticScore,hits,minScore)),HSTACK(normalizedUrl,finalResult,staticScore,fetchStatus,matchedPhrases)))
+AGEGATE_RESULT =LAMBDA(url,[minScore],IF(ISOMITTED(minScore),CHOOSECOLS(AGEGATE_TRIAGE(url),2),CHOOSECOLS(AGEGATE_TRIAGE(url,minScore),2)))
+AGEGATE_SCORE =LAMBDA(url,[minScore],IF(ISOMITTED(minScore),CHOOSECOLS(AGEGATE_TRIAGE(url),3),CHOOSECOLS(AGEGATE_TRIAGE(url,minScore),3)))
+AGEGATE_EVIDENCE =LAMBDA(url,[minScore],IF(ISOMITTED(minScore),CHOOSECOLS(AGEGATE_TRIAGE(url),5),CHOOSECOLS(AGEGATE_TRIAGE(url,minScore),5)))
+Optional for training feature output:
+AGEGATE_HITS =LAMBDA(url,LET(normalizedUrl,AG_NORMALIZE_URL(url),html,AG_FETCH_HTML(normalizedUrl),fetchStatus,AG_FETCH_STATUS(normalizedUrl,html),AG_FINAL_HITS(AG_RAW_HITS(html,fetchStatus))))
+AGEGATE_HIT_ROW =LAMBDA(url,TRANSPOSE(AGEGATE_HITS(url)))
+Use:tOutput[result] = AGEGATE_RESULT([@url])
+Diagnostic spill: =AGEGATE_TRIAGE(A2)
+Training feature row, columns must match tWeights[feature_name] order: =AGEGATE_HIT_ROW([@url])
+
+Manual Review Table
+
+url
+static_result
+static_score
+matched_phrases
+manual_result
+manual_notes
+review_date
+reviewer_initials
+
+Formulas:
+
+static_result =AGEGATE_RESULT([@url])
+
+static_score =AGEGATE_SCORE([@url])
+
+matched_phrases =AGEGATE_EVIDENCE([@url])
+
+1 = reviewer confirmed adequate static evidence
+0 = not enough / unclear / blocked
+
+—
+
+Excel Keyboard / Mouse Reference
+
+New workbook                 Ctrl+N
+Save                         Ctrl+S
+Save As                      F12
+Open                         Ctrl+O
+Print                        Ctrl+P
+Undo / Redo                  Ctrl+Z / Ctrl+Y
+Find / Replace               Ctrl+F / Ctrl+H
+Go To                        Ctrl+G or F5
+Edit active cell             F2
+Enter same value in selection Ctrl+Enter
+Fill down / right            Ctrl+D / Ctrl+R
+Flash Fill                   Ctrl+E
+AutoSum                      Alt+=
+Filter toggle                Ctrl+Shift+L
+Create Table                 Ctrl+T
+Select current region        Ctrl+*
+Select entire table column   Ctrl+Space inside table
+Select entire table row      Shift+Space inside table
+Insert row/column            Ctrl+Shift++
+Delete row/column            Ctrl+-
+Format Cells                 Ctrl+1
+Format as currency           Ctrl+Shift+$
+Format as percent            Ctrl+Shift+%
+Format as date               Ctrl+Shift+#
+Format as number             Ctrl+Shift+!
+Today / current time         Ctrl+; / Ctrl+Shift+;
+Recalculate workbook         F9
+Recalculate sheet            Shift+F9
+Full recalculation           Ctrl+Alt+F9
+Refresh all                  Ctrl+Alt+F5
+Name Manager                 Ctrl+F3
+Create names from selection  Ctrl+Shift+F3
+Show formulas                Ctrl+`
+Freeze panes mouse           View > Freeze Panes
+Manual calc mouse            Formulas > Calculation Options > Manual
+Power Query from table       Data > From Table/Range
+Remove duplicates mouse      Data > Remove Duplicates
+Data validation mouse        Data > Data Validation
+Evaluate formula mouse       Formulas > Evaluate Formula
+
+---
+
+Alt Ribbon Paths
+
+Manual calculation           Alt M X M
+Automatic calculation        Alt M X A
+Name Manager                 Alt M N
+Evaluate Formula             Alt M V
+Trace Precedents             Alt M P
+Trace Dependents             Alt M D
+Remove Arrows                Alt M A A
+Sort A-Z                     Alt A S A
+Sort Z-A                     Alt A S D
+Advanced Filter              Alt A Q
+Remove Duplicates            Alt A M
+Data Validation              Alt A V V
+Text to Columns              Alt A E
+Refresh All                  Alt A R A
+From Table/Range             Alt A P T
+PivotTable                   Alt N V
+Format as Table              Alt H T
+Conditional Formatting       Alt H L
+Wrap Text                    Alt H W
+Merge Cells                  Alt H M C
+Auto-Column Width.           Alt H O I
+
+---
+
+Workbook Build Pattern
+
+00_Control_Panel       tables, thresholds, named variables
+01_Output              final user-facing results only
+02_Work                formulas / diagnostics / audit math
+03_Manual_Review       human result, notes, reviewer, date
+04_Training_Set        later labels for model improvement
+………[add sheets]
+99_Lookups             reference tables / mapping tables
+
+---
+
+Excel Tables
+
+Create table            Ctrl+T
+Rename table            Table Design > Table Name
+Use tables, not ranges  tData[Column]
+Current row             [@Column]
+Entire column           tData[Column]
+Headers                 tData[#Headers]
+All table               tData[#All]
+Totals row              tData[#Totals]
+
+Current row value =[@Amount]
+
+Table column sum =SUM(tData[Amount])
+
+Current row calculation =[@Gross]-[@Fee]+[@Adjustment]
+
+Structured XLOOKUP =XLOOKUP([@ID],tLookup[ID],tLookup[Value],"")
+
+---
+
+Named Formula Pattern
+
+MYFUNC =LAMBDA(x,LET(a,x+1,b,a*2,b))
+
+Name Manager            Ctrl+F3
+Use LET for readability
+Use LAMBDA for reuse
+Use tables for inputs
+Use named functions to avoid giant formulas
+
+---
+
+Error Handling
+
+Blank if error =IFERROR(formula,"")
+
+Default zero if error =IFERROR(formula,0)
+
+Return REVIEW on error =IFERROR(formula,"REVIEW")
+
+Safe text coercion =IFERROR(TRIM(A2&""),"")
+
+Safe number coercion =IFERROR(--A2,0)
+
+Check blank =IF(A2="","",formula)
+
+Check numeric =IF(ISNUMBER(A2),formula,"REVIEW")
+
+Check missing lookup =XLOOKUP(A2,tMap[Key],tMap[Value],"MISSING")
+
+---
+
+Core Lookup Formulas
+
+Exact lookup =XLOOKUP(A2,tMap[Key],tMap[Value],"NOT FOUND")
+
+Two-way lookup =INDEX(tData,MATCH(rowKey,tData[Key],0),MATCH(colName,tData[#Headers],0))
+
+Multiple criteria lookup =XLOOKUP(1,(tData[Key1]=A2)*(tData[Key2]=B2),tData[Return],"NOT FOUND")
+
+Return multiple columns =XLOOKUP(A2,tData[ID],tData[[Name]:[Status]],"NOT FOUND")
+
+Approximate threshold lookup =XLOOKUP(score,tBands[Min],tBands[Label],"",1)
+
+Last match =XLOOKUP(A2,tData[Key],tData[Value],"NOT FOUND",0,-1)
+
+Match position =XMATCH(A2,tData[Key],0)
+
+Return row by ID =FILTER(tData,tData[ID]=A2,"NO ROW")
+
+---
+
+Filter / Sort / Unique
+
+Filter rows =FILTER(tData,tData[Status]="OPEN","NONE")
+
+Filter multiple criteria AND =FILTER(tData,(tData[Status]="OPEN")*(tData[Amount]>0),"NONE")
+
+Filter multiple criteria OR =FILTER(tData,(tData[Status]="OPEN")+(tData[Status]="REVIEW"),"NONE")
+
+Unique list =UNIQUE(tData[Merchant])
+
+Sorted unique list =SORT(UNIQUE(tData[Merchant]))
+
+Top 10 rows by amount =TAKE(SORTBY(tData,tData[Amount],-1),10)
+
+Choose columns =CHOOSECOLS(tData,1,3,5)
+
+Drop first row =DROP(range,1)
+
+Take last 5 rows =TAKE(range,-5)
+
+---
+
+SUMIFS / COUNTIFS / Control Totals
+
+Sum by one condition =SUMIFS(tData[Amount],tData[Merchant],A2)
+
+Sum by date range =SUMIFS(tData[Amount],tData[Date],">="&startDate,tData[Date],"<="&endDate)
+
+Sum by multiple conditions =SUMIFS(tData[Amount],tData[Merchant],A2,tData[Type],B2)
+
+Count by condition =COUNTIFS(tData[Status],"REVIEW")
+
+Count blanks =COUNTBLANK(tData[Result])
+
+Control total variance =SUM(tDetail[Amount])-SUM(tSummary[Amount])
+
+Balanced? =IF(ROUND(SUM(tDetail[Amount])-SUM(tSummary[Amount]),2)=0,"BALANCED","VARIANCE")
+
+Exception count =COUNTIFS(tData[Variance],"<>0")
+
+Exception amount =SUMIFS(tData[Variance],tData[Variance],"<>0")
+
+---
+
+Date Formulas
+
+Today =TODAY()
+
+Now =NOW()
+
+Month start =EOMONTH(A2,-1)+1
+
+Month end =EOMONTH(A2,0)
+
+Weekday number =WEEKDAY(A2,2)
+
+Weekend flag =--(WEEKDAY(A2,2)>5)
+
+Year-month key =TEXT(A2,"yyyy-mm")
+
+Date from parts =DATE(year,month,day)
+
+Days between =endDate-startDate
+
+Business days =NETWORKDAYS(startDate,endDate)
+
+Add business days =WORKDAY(startDate,n)
+
+Aging bucket =IFS(days<=0,"CURRENT",days<=30,"1-30",days<=60,"31-60",days<=90,"61-90",TRUE,"90+")
+
+---
+
+Text Cleaning
+
+Trim spaces =TRIM(A2)
+
+Lowercase =LOWER(A2)
+
+Remove nonbreaking spaces =SUBSTITUTE(A2,CHAR(160)," ")
+
+Clean line breaks =SUBSTITUTE(SUBSTITUTE(A2,CHAR(10)," "),CHAR(13)," ")
+
+Normalize text =LOWER(TRIM(SUBSTITUTE(SUBSTITUTE(A2,CHAR(160)," "),CHAR(10)," ")))
+
+Contains phrase =ISNUMBER(SEARCH("phrase",LOWER(A2)))
+
+Contains any phrase list =--OR(ISNUMBER(SEARCH(tPhrases[phrase],LOWER(A2))))
+
+Text before delimiter =TEXTBEFORE(A2,"?")
+
+Text after delimiter =TEXTAFTER(A2,"/")
+
+Split text =TEXTSPLIT(A2,"|")
+
+Join text =TEXTJOIN(" | ",TRUE,range)
+
+Remove protocol =SUBSTITUTE(SUBSTITUTE(A2,"https://",""),"http://","")
+
+---
+
+URL Cleaning
+
+Add https if missing =LET(u,TRIM(A2),l,LOWER(u),IF(OR(LEFT(l,7)="http://",LEFT(l,8)="https://"),u,"https://"&u))
+
+Domain only rough =TEXTBEFORE(SUBSTITUTE(SUBSTITUTE(A2,"https://",""),"http://",""),"/")
+
+Remove query string =TEXTBEFORE(A2&"?","?")
+
+Remove trailing slash =IF(RIGHT(A2)="/",LEFT(A2,LEN(A2)-1),A2)
+
+---
+
+Reconciliation Formulas
+
+Expected net =[@Gross]-[@Fee]+[@Adjustment]
+
+Variance =ROUND([@Expected_Net]-[@Actual_Net],2)
+
+Variance flag =IF(ABS([@Variance])>=0.01,"EXCEPTION","OK")
+
+Percent variance =IFERROR([@Variance]/[@Expected_Net],0)
+
+Signed direction =IF([@Variance]>0,"OVER",IF([@Variance]<0,"SHORT","BALANCED"))
+
+Absolute variance =ABS([@Variance])
+
+Tolerance check =IF(ABS([@Variance])<=0.01,"OK","REVIEW")
+
+Control total by date =SUMIFS(tData[Amount],tData[Date],[@Date])
+
+Expected settlement T+1 =XLOOKUP([@Date]+1,tACH[Process_Date],tACH[Amount],0)
+
+T+0 to T+3 settlement window =SUMIFS(tACH[Amount],tACH[Process_Date],">="&[@Date],tACH[Process_Date],"<="&[@Date]+3)
+
+Window variance =ROUND([@Expected_Settlement]-[@Window_ACH],2)
+
+First date account hits zero =XLOOKUP(0,tLedger[Balance],tLedger[Date],"NO ZERO",0)
+
+Last zero balance date =XLOOKUP(0,tLedger[Balance],tLedger[Date],"NO ZERO",0,-1)
+
+---
+
+Exception / Review Logic
+
+Basic status =IFS([@fetch_status]<>"OK","REVIEW",[@score]>=8,"PASS",TRUE,"REVIEW")
+
+Manual override =IF([@manual_result]<>"",[@manual_result],[@static_result])
+
+Priority =IFS([@fetch_status]<>"OK","HIGH",[@score]<5,"HIGH",[@score]<8,"NORMAL",TRUE,"LOW")
+
+Missing required field =IF(OR([@URL]="",[@Merchant]="",[@Date]=""),"MISSING","OK")
+
+Duplicate key =IF(COUNTIFS(tData[Key],[@Key])>1,"DUPLICATE","OK")
+
+Valid amount =IF(ISNUMBER([@Amount]),"OK","BAD AMOUNT")
+
+Audit flag =TEXTJOIN(" | ",TRUE,IF([@Variance]<>0,"VARIANCE",""),IF([@Status]="REVIEW","REVIEW",""),IF([@Duplicate]="DUPLICATE","DUPLICATE",""))
+
+---
+
+Dynamic Array Row Operations
+
+Apply formula to each row =BYROW(range,LAMBDA(r,SUM(r)))
+
+Apply formula to each column =BYCOL(range,LAMBDA(c,AVERAGE(c)))
+
+Map two arrays =MAP(array1,array2,LAMBDA(a,b,a-b))
+
+Reduce list to one value =REDUCE(0,array,LAMBDA(acc,x,acc+x))
+
+Scan running total =SCAN(0,array,LAMBDA(acc,x,acc+x))
+
+Create sequence =SEQUENCE(10)
+
+Horizontal stack =HSTACK(range1,range2)
+
+Vertical stack =VSTACK(range1,range2)
+
+---
+
+Core Linear Algebra in Excel
+
+Vector = one column or one row of numbers
+Matrix = rectangular table of numbers
+Dot product = SUMPRODUCT(vector1,vector2)
+Matrix multiply = MMULT(matrixA,matrixB)
+Transpose = TRANSPOSE(matrix)
+Inverse = MINVERSE(matrix)
+Determinant = MDETERM(matrix)
+Identity matrix = MUNIT(n)
+
+Dot product =SUMPRODUCT(xVector,wVector)
+
+Weighted score =SUMPRODUCT(featureHits,weights)
+
+Matrix multiply =MMULT(A,B)
+
+Transpose matrix =TRANSPOSE(A)
+
+Inverse matrix =MINVERSE(A)
+
+Identity matrix =MUNIT(5)
+---
+
+Linear Algebra Patterns
+
+Feature score =SUMPRODUCT(tFeatures[@[x1]:[x9]],tWeights[weight])
+
+Multiple row scores =MMULT(featureMatrix,weightVector)
+
+Normalize vector length =SQRT(SUMSQ(vector))
+
+Unit vector =vector/SQRT(SUMSQ(vector))
+
+Euclidean distance =SQRT(SUMXMY2(vectorA,vectorB))
+
+Manhattan distance =SUM(ABS(vectorA-vectorB))
+
+Cosine similarity =SUMPRODUCT(vectorA,vectorB)/(SQRT(SUMSQ(vectorA))*SQRT(SUMSQ(vectorB)))
+
+Cosine distance =1-(SUMPRODUCT(vectorA,vectorB)/(SQRT(SUMSQ(vectorA))*SQRT(SUMSQ(vectorB))))
+
+Centered value =x-AVERAGE(range)
+
+Z-score =(x-AVERAGE(range))/STDEV.S(range)
+
+Min-max scale =(x-MIN(range))/(MAX(range)-MIN(range))
+
+Weighted average =SUMPRODUCT(values,weights)/SUM(weights)
+
+---
+
+Regression / Model Prep
+
+Linear prediction =intercept+SUMPRODUCT(featureHits,coefficients)
+
+Logistic probability =1/(1+EXP(-(intercept+SUMPRODUCT(featureHits,coefficients))))
+
+Odds =p/(1-p)
+
+Log odds =LN(p/(1-p))
+
+Class by threshold =IF(probability>=0.8,"PASS","REVIEW")
+
+Residual =actual-predicted
+
+Squared error =(actual-predicted)^2
+
+Mean squared error =AVERAGE(squaredErrors)
+
+Root mean squared error =SQRT(AVERAGE(squaredErrors))
+
+Mean absolute error =AVERAGE(ABS(actualRange-predictedRange))
+
+---
+
+Normal Equation Linear Regression
+
+X = feature matrix with intercept column
+y = target column
+β = coefficient vector
+β = (XᵀX)^-1 Xᵀy
+
+Beta coefficients =MMULT(MMULT(MINVERSE(MMULT(TRANSPOSE(X),X)),TRANSPOSE(X)),y)
+
+Use only when XᵀX is invertible.
+If unstable, use LINEST or simpler hand-weighted model.
+
+---
+
+Classification Metrics
+
+True Positive =COUNTIFS(tVal[actual],1,tVal[predicted],1)
+
+False Positive =COUNTIFS(tVal[actual],0,tVal[predicted],1)
+
+True Negative =COUNTIFS(tVal[actual],0,tVal[predicted],0)
+
+False Negative =COUNTIFS(tVal[actual],1,tVal[predicted],0)
+
+Precision =TP/(TP+FP)
+
+Recall =TP/(TP+FN)
+
+Accuracy =(TP+TN)/(TP+FP+TN+FN)
+
+False positive rate =FP/(FP+TN)
+
+Review reduction =COUNTIFS(tVal[result],"PASS")/ROWS(tVal[result])
+
+---
+
+Useful Statistical Formulas
+
+Average =AVERAGE(range)
+
+Median =MEDIAN(range)
+
+Standard deviation =STDEV.S(range)
+
+Variance =VAR.S(range)
+
+Percentile =PERCENTILE.INC(range,0.95)
+
+Rank =RANK.EQ(value,range,0)
+
+Correlation =CORREL(rangeX,rangeY)
+
+Covariance =COVARIANCE.S(rangeX,rangeY)
+
+Confidence interval half-width =CONFIDENCE.T(0.05,STDEV.S(range),COUNT(range))
+
+Lower CI =AVERAGE(range)-CONFIDENCE.T(0.05,STDEV.S(range),COUNT(range))
+
+Upper CI =AVERAGE(range)+CONFIDENCE.T(0.05,STDEV.S(range),COUNT(range))
+
+---
+
+Drift / CUSUM
+
+Mean baseline =AVERAGE(baselineRange)
+
+Std baseline =STDEV.S(baselineRange)
+
+Z score =([@Value]-baselineMean)/baselineStd
+
+CUSUM positive =MAX(0,previousCUSUM+[@Value]-target-k)
+
+CUSUM negative =MIN(0,previousCUSUM+[@Value]-target+k)
+
+Simple cumulative variance =SUM(INDEX(tData[Variance],1):[@Variance])
+
+Running total with SCAN =SCAN(0,tData[Variance],LAMBDA(a,b,a+b))
+
+---
+SQL mental model
+Excel Table      = table
+Power Query      = ETL pipeline
+Loaded Table     = view/output
+PivotTable       = grouped report
+XLOOKUP          = left join for one return field
+Power Query Merge= database join
+
+---
+
+Data Validation Lists
+
+Simple list source
+PASS,REVIEW,FAIL,N/A
+
+Table-backed list source =tStatusList[Status]
+
+Manual result options
+PASS
+REVIEW
+FAIL
+N/A
+
+---
+
+Conditional Formatting Rules
+
+Variance <> 0           highlight exception
+ABS(variance) > tolerance    high exception
+fetch_status = FETCH_ERROR     review color
+result = REVIEW                review color
+duplicate = DUPLICATE       duplicate color
+manual_result <> static_result  check color
+blank required field     missing data color
+
+Formula rule examples =$D2<>0
+=ABS($D2)>0.01
+=$E2="REVIEW"
+=$F2="FETCH_ERROR"
+=COUNTIF($A:$A,$A2)>1
+
+---
+
+Data QA Checklist Formulas
+
+Row count =ROWS(tData)
+
+Unique key count =ROWS(UNIQUE(tData[Key]))
+
+Duplicate count =ROWS(tData)-ROWS(UNIQUE(tData[Key]))
+
+Blank required fields =COUNTBLANK(tData[Required_Field])
+
+Min date =MIN(tData[Date])
+
+Max date =MAX(tData[Date])
+
+Total amount =SUM(tData[Amount])
+
+Positive amount total =SUMIFS(tData[Amount],tData[Amount],">0")
+
+Negative amount total =SUMIFS(tData[Amount],tData[Amount],"<0")
+
+Check total equals source =IF(ROUND(SUM(tData[Amount])-sourceTotal,2)=0,"OK","CHECK")
+
+---
+
+Clean Model Pattern
+
+Raw data table
+→ clean normalized fields
+→ lookup/mapping fields
+→ feature flags
+→ score
+→ rule result
+→ manual review override
+→ final output
+
+Final result =IF([@manual_result]<>"",[@manual_result],[@static_result])
+
+Reason code =TEXTJOIN(" | ",TRUE,IF([@score]<8,"LOW SCORE",""),IF([@fetch_status]<>"OK","FETCH ERROR",""),IF([@manual_result]<>"","MANUAL OVERRIDE",""))
